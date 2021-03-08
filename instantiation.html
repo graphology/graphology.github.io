@@ -1,0 +1,1942 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Instantiation · graphology</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="instantiation.html" />
+    
+    
+    <link rel="prev" href="design.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="standard-library.html">
+            
+                <a href="standard-library.html">
+            
+                    
+                    Standard library
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="design.html">
+            
+                <a href="design.html">
+            
+                    
+                    Design choices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="instantiation.html">
+            
+                <a href="instantiation.html">
+            
+                    
+                    Instantiation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="instantiation.html">
+            
+                <a href="instantiation.html#options">
+            
+                    
+                    Options
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="instantiation.html">
+            
+                <a href="instantiation.html#typed-constructors">
+            
+                    
+                    Typed constructors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="instantiation.html">
+            
+                <a href="instantiation.html#static-from-method">
+            
+                    
+                    Static #.from method
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="properties.html">
+            
+                <a href="properties.html">
+            
+                    
+                    Properties
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="properties.html">
+            
+                <a href="properties.html#order">
+            
+                    
+                    #.order
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="properties.html">
+            
+                <a href="properties.html#size">
+            
+                    
+                    #.size
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="properties.html">
+            
+                <a href="properties.html#type">
+            
+                    
+                    #.type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="properties.html">
+            
+                <a href="properties.html#multi">
+            
+                    
+                    #.multi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="properties.html">
+            
+                <a href="properties.html#allowselfloops">
+            
+                    
+                    #.allowSelfLoops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="properties.html">
+            
+                <a href="properties.html#selfloopcount">
+            
+                    
+                    #.selfLoopCount
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="properties.html">
+            
+                <a href="properties.html#implementation">
+            
+                    
+                    #.implementation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="read.html">
+            
+                <a href="read.html">
+            
+                    
+                    Read
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="read.html">
+            
+                <a href="read.html#hasnode">
+            
+                    
+                    #.hasNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="read.html">
+            
+                <a href="read.html#hasedge">
+            
+                    
+                    #.hasEdge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="read.html">
+            
+                <a href="read.html#edge">
+            
+                    
+                    #.edge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="read.html">
+            
+                <a href="read.html#degree">
+            
+                    
+                    #.degree
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="read.html">
+            
+                <a href="read.html#source">
+            
+                    
+                    #.source
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="read.html">
+            
+                <a href="read.html#target">
+            
+                    
+                    #.target
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="read.html">
+            
+                <a href="read.html#opposite">
+            
+                    
+                    #.opposite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="read.html">
+            
+                <a href="read.html#extremities">
+            
+                    
+                    #.extremities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="read.html">
+            
+                <a href="read.html#hasextremity">
+            
+                    
+                    #.hasExtremity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="read.html">
+            
+                <a href="read.html#hasgeneratedkey">
+            
+                    
+                    #.hasGeneratedKey
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="read.html">
+            
+                <a href="read.html#isdirected">
+            
+                    
+                    #.isDirected
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="read.html">
+            
+                <a href="read.html#isselfloop">
+            
+                    
+                    #.isSelfLoop
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="mutation.html">
+            
+                <a href="mutation.html">
+            
+                    
+                    Mutation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="mutation.html">
+            
+                <a href="mutation.html#addnode">
+            
+                    
+                    #.addNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="mutation.html">
+            
+                <a href="mutation.html#mergenode">
+            
+                    
+                    #.mergeNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="mutation.html">
+            
+                <a href="mutation.html#updatenode">
+            
+                    
+                    #.updateNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="mutation.html">
+            
+                <a href="mutation.html#addedge">
+            
+                    
+                    #.addEdge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="mutation.html">
+            
+                <a href="mutation.html#addedgewithkey">
+            
+                    
+                    #.addEdgeWithKey
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="mutation.html">
+            
+                <a href="mutation.html#mergeedge">
+            
+                    
+                    #.mergeEdge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="mutation.html">
+            
+                <a href="mutation.html#mergeedgewithkey">
+            
+                    
+                    #.mergeEdgeWithKey
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="mutation.html">
+            
+                <a href="mutation.html#updateedge">
+            
+                    
+                    #.updateEdge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="mutation.html">
+            
+                <a href="mutation.html#updateedgewithkey">
+            
+                    
+                    #.updateEdgeWithKey
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="mutation.html">
+            
+                <a href="mutation.html#dropnode">
+            
+                    
+                    #.dropNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.11" data-path="mutation.html">
+            
+                <a href="mutation.html#dropedge">
+            
+                    
+                    #.dropEdge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.12" data-path="mutation.html">
+            
+                <a href="mutation.html#clear">
+            
+                    
+                    #.clear
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.13" data-path="mutation.html">
+            
+                <a href="mutation.html#clearedges">
+            
+                    
+                    #.clearEdges
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="attributes.html">
+            
+                <a href="attributes.html">
+            
+                    
+                    Attributes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="attributes.html">
+            
+                <a href="attributes.html#graph">
+            
+                    
+                    Graph
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1.1" data-path="attributes.html">
+            
+                <a href="attributes.html#getattribute">
+            
+                    
+                    #.getAttribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.2" data-path="attributes.html">
+            
+                <a href="attributes.html#getattribute">
+            
+                    
+                    #.getAttributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.3" data-path="attributes.html">
+            
+                <a href="attributes.html#hasattribute">
+            
+                    
+                    #.hasAttribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.4" data-path="attributes.html">
+            
+                <a href="attributes.html#setattribute">
+            
+                    
+                    #.setAttribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.5" data-path="attributes.html">
+            
+                <a href="attributes.html#updateattribute">
+            
+                    
+                    #.updateAttribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.6" data-path="attributes.html">
+            
+                <a href="attributes.html#removeattribute">
+            
+                    
+                    #.removeAttribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.7" data-path="attributes.html">
+            
+                <a href="attributes.html#replaceattributes">
+            
+                    
+                    #.replaceAttributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.8" data-path="attributes.html">
+            
+                <a href="attributes.html#mergenodeattributes">
+            
+                    
+                    #.mergeAttributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="attributes.html">
+            
+                <a href="attributes.html#nodes">
+            
+                    
+                    Nodes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.2.1" data-path="attributes.html">
+            
+                <a href="attributes.html#getnodeattribute">
+            
+                    
+                    #.getNodeAttribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.2" data-path="attributes.html">
+            
+                <a href="attributes.html#getnodeattribute">
+            
+                    
+                    #.getNodeAttributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.3" data-path="attributes.html">
+            
+                <a href="attributes.html#hasnodeattribute">
+            
+                    
+                    #.hasNodeAttribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.4" data-path="attributes.html">
+            
+                <a href="attributes.html#setnodeattribute">
+            
+                    
+                    #.setNodeAttribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.5" data-path="attributes.html">
+            
+                <a href="attributes.html#updatenodeattribute">
+            
+                    
+                    #.updateNodeAttribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.6" data-path="attributes.html">
+            
+                <a href="attributes.html#removenodeattribute">
+            
+                    
+                    #.removeNodeAttribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.7" data-path="attributes.html">
+            
+                <a href="attributes.html#replacenodeattributes">
+            
+                    
+                    #.replaceNodeAttributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.8" data-path="attributes.html">
+            
+                <a href="attributes.html#mergenodeattributes">
+            
+                    
+                    #.mergeNodeAttributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.9" data-path="attributes.html">
+            
+                <a href="attributes.html#updateeachnodeattributes">
+            
+                    
+                    #.updateEachNodeAttributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="attributes.html">
+            
+                <a href="attributes.html#edges">
+            
+                    
+                    Edges
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.3.1" data-path="attributes.html">
+            
+                <a href="attributes.html#getedgeattribute">
+            
+                    
+                    #.getEdgeAttribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.2" data-path="attributes.html">
+            
+                <a href="attributes.html#getedgeattributes">
+            
+                    
+                    #.getEdgeAttributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.3" data-path="attributes.html">
+            
+                <a href="attributes.html#hasedgeattribute">
+            
+                    
+                    #.hasEdgeAttribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.4" data-path="attributes.html">
+            
+                <a href="attributes.html#setedgeattribute">
+            
+                    
+                    #.setEdgeAttribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.5" data-path="attributes.html">
+            
+                <a href="attributes.html#updateedgeattribute">
+            
+                    
+                    #.updateEdgeAttribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.6" data-path="attributes.html">
+            
+                <a href="attributes.html#removeedgeattribute">
+            
+                    
+                    #.removeEdgeAttribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.7" data-path="attributes.html">
+            
+                <a href="attributes.html#replaceedgeattributes">
+            
+                    
+                    #.replaceEdgeAttributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.8" data-path="attributes.html">
+            
+                <a href="attributes.html#mergeedgeattributes">
+            
+                    
+                    #.mergeEdgeAttributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.9" data-path="attributes.html">
+            
+                <a href="attributes.html#updateeachedgeattributes">
+            
+                    
+                    #.updateEachEdgeAttributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="iteration.html">
+            
+                <a href="iteration.html">
+            
+                    
+                    Iteration
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="iteration.html">
+            
+                <a href="iteration.html#adjacency">
+            
+                    
+                    Adjacency
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1.1" data-path="iteration.html">
+            
+                <a href="iteration.html#foreach">
+            
+                    
+                    #.forEach
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.2" data-path="iteration.html">
+            
+                <a href="iteration.html#foreachuntil">
+            
+                    
+                    #.forEachUntil
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.3" data-path="iteration.html">
+            
+                <a href="iteration.html#adjacency-iterator">
+            
+                    
+                    #.adjacency
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="iteration.html">
+            
+                <a href="iteration.html#nodes">
+            
+                    
+                    Nodes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.2.1" data-path="iteration.html">
+            
+                <a href="iteration.html#nodes-array">
+            
+                    
+                    #.nodes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.2" data-path="iteration.html">
+            
+                <a href="iteration.html#foreachnode">
+            
+                    
+                    #.forEachNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.3" data-path="iteration.html">
+            
+                <a href="iteration.html#foreachnodeuntil">
+            
+                    
+                    #.forEachNodeUntil
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.4" data-path="iteration.html">
+            
+                <a href="iteration.html#nodeentries">
+            
+                    
+                    #.nodeEntries
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="iteration.html">
+            
+                <a href="iteration.html#edges">
+            
+                    
+                    Edges
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.3.1" data-path="iteration.html">
+            
+                <a href="iteration.html#edges-array">
+            
+                    
+                    #.edges
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.2" data-path="iteration.html">
+            
+                <a href="iteration.html#foreachedge">
+            
+                    
+                    #.forEachEdge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.3" data-path="iteration.html">
+            
+                <a href="iteration.html#foreachedgeuntil">
+            
+                    
+                    #.forEachEdgeUntil
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.4" data-path="iteration.html">
+            
+                <a href="iteration.html#edgeentries">
+            
+                    
+                    #.edgeEntries
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="iteration.html">
+            
+                <a href="iteration.html#neighbors">
+            
+                    
+                    Neighbors
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.4.1" data-path="iteration.html">
+            
+                <a href="iteration.html#neighbors-array">
+            
+                    
+                    #.neighbors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.2" data-path="iteration.html">
+            
+                <a href="iteration.html#foreachneighbor">
+            
+                    
+                    #.forEachNeighbor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.3" data-path="iteration.html">
+            
+                <a href="iteration.html#foreachneighboruntil">
+            
+                    
+                    #.forEachNeighborUntil
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.4" data-path="iteration.html">
+            
+                <a href="iteration.html#neighborentries">
+            
+                    
+                    #.neighborEntries
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="events.html">
+            
+                <a href="events.html">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="events.html">
+            
+                <a href="events.html#nodeadded">
+            
+                    
+                    nodeAdded
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="events.html">
+            
+                <a href="events.html#edgeadded">
+            
+                    
+                    edgeAdded
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="events.html">
+            
+                <a href="events.html#nodedropped">
+            
+                    
+                    nodeDropped
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="events.html">
+            
+                <a href="events.html#edgedropped">
+            
+                    
+                    edgeDropped
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="events.html">
+            
+                <a href="events.html#cleared">
+            
+                    
+                    cleared
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="events.html">
+            
+                <a href="events.html#edgescleared">
+            
+                    
+                    edgesCleared
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="events.html">
+            
+                <a href="events.html#attributesupdated">
+            
+                    
+                    attributesUpdated
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="events.html">
+            
+                <a href="events.html#nodeattributesupdated">
+            
+                    
+                    nodeAttributesUpdated
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="events.html">
+            
+                <a href="events.html#edgeattributesupdated">
+            
+                    
+                    edgeAttributesUpdated
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="events.html">
+            
+                <a href="events.html#eachnodeattributesupdated">
+            
+                    
+                    eachNodeAttributesUpdated
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="events.html">
+            
+                <a href="events.html#eachedgeattributesupdated">
+            
+                    
+                    eachEdgeAttributesUpdated
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="serialization.html">
+            
+                <a href="serialization.html">
+            
+                    
+                    Serialization
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="serialization.html">
+            
+                <a href="serialization.html#format">
+            
+                    
+                    Format
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="serialization.html">
+            
+                <a href="serialization.html#import">
+            
+                    
+                    #.import
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="serialization.html">
+            
+                <a href="serialization.html#importnode">
+            
+                    
+                    #.importNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="serialization.html">
+            
+                <a href="serialization.html#importedge">
+            
+                    
+                    #.importEdge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="serialization.html">
+            
+                <a href="serialization.html#export">
+            
+                    
+                    #.export
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="serialization.html">
+            
+                <a href="serialization.html#exportnode">
+            
+                    
+                    #.exportNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="serialization.html">
+            
+                <a href="serialization.html#exportedge">
+            
+                    
+                    #.exportEdge
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="utils.html">
+            
+                <a href="utils.html">
+            
+                    
+                    Utils
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="utils.html">
+            
+                <a href="utils.html#copy">
+            
+                    
+                    #.copy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="utils.html">
+            
+                <a href="utils.html#nullcopy">
+            
+                    
+                    #.nullCopy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="utils.html">
+            
+                <a href="utils.html#emptycopy">
+            
+                    
+                    #.emptyCopy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="utils.html">
+            
+                <a href="utils.html#upgradetomixed">
+            
+                    
+                    #.upgradeToMixed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="utils.html">
+            
+                <a href="utils.html#upgradetomulti">
+            
+                    
+                    #.upgradeToMulti
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="knownmethods.html">
+            
+                <a href="knownmethods.html">
+            
+                    
+                    Known methods
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="knownmethods.html">
+            
+                <a href="knownmethods.html#tojson">
+            
+                    
+                    #.toJSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="knownmethods.html">
+            
+                <a href="knownmethods.html#inspect">
+            
+                    
+                    #.inspect
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="unittests.html">
+            
+                <a href="unittests.html">
+            
+                    
+                    Running the unit tests
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Instantiation</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="instantiation">Instantiation</h1><p>Instantiating a <code>graphology</code> Graph object is merely an issue of requiring an implementation and calling it with some options.</p><p>Note that if you need to create a Graph using some serialized data or another Graph&apos;s data, you should probably check the static <a href="#static-from-method">#.from</a>.</p><pre class="language-"><code class="lang-js"><span class="token keyword">import</span> Graph <span class="token keyword">from</span> <span class="token string">&apos;graphology&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Here you go:</span>
+<span class="token keyword">const</span> graph <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Graph</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// With options:</span>
+<span class="token keyword">const</span> graph <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Graph</span><span class="token punctuation">(</span>options<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h2 id="options">Options</h2><ul><li><strong>allowSelfLoops</strong> <span class="code">[boolean]</span> <span class="default">true</span>: should the graph allow self-loops?
+</li>
+<li><strong>edgeKeyGenerator</strong> <span class="code">[function]</span>: Function used internally by the graph to produce keys for key-less edges. By default, the graph will produce boring internal incremental keys for you. For more information concerning the function you can provide, see <a href="#edge-key-generator-function">this</a>.
+</li>
+<li><strong>multi</strong> <span class="code">[boolean]</span> <span class="default">false</span>: Should the graph allow parallel edges?
+</li>
+<li><strong>type</strong> <span class="code">[string]</span> <span class="default">&quot;mixed&quot;</span>: Type of the graph. One of <code>directed</code>, <code>undirected</code> or <code>mixed</code>.
+</li></ul>
+<p><em>Examples</em></p><pre class="language-"><code class="lang-js"><span class="token comment">// Creating a multi-graph with no self-loops</span>
+<span class="token keyword">const</span> graph <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Graph</span><span class="token punctuation">(</span><span class="token punctuation">{</span>multi<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> allowSelfLoops<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h2 id="typed-constructors">Typed constructors</h2><p>Rather than providing tedious options to the constructor, one can use one of the many handy constructors provided by the implementation to create the desired graph:</p><pre class="language-"><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span>MultiDirectedGraph<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;graphology&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> myCustomGraph <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">MultiDirectedGraph</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>By default, the <code>Graph</code> object is a simple mixed graph, but here are the different naming &quot;components&quot; that you can use to instantiate a more complex graph:</p><ul><li><strong>Type of the graph?</strong>: <code>Directed</code>, <code>Undirected</code> or none (mixed graph).
+</li>
+<li><strong>Graph with parallel edges?</strong>: <code>Multi</code> or none (simple graph).
+</li></ul>
+<p>Then to build the name, one must order the components likewise:</p><pre class="language-"><code>Multi? + Type? + Graph</code></pre>
+<p><em>List of all the typed constructors</em></p><pre class="language-"><code>DirectedGraph
+UndirectedGraph
+MultiGraph
+MultiDirectedGraph
+MultiUndirectedGraph</code></pre>
+<h2 id="static-from-method">Static #.from method</h2><p>Alternatively, one can create a graph from a serialized graph or another <code>Graph</code> instance using the static <code>#.from</code> method:</p><p><em>Example</em></p><pre class="language-"><code class="lang-js"><span class="token keyword">const</span> graph <span class="token operator">=</span> Graph<span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Need some options?</span>
+<span class="token keyword">const</span> graph <span class="token operator">=</span> Graph<span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span>data<span class="token punctuation">,</span> options<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Also works with typed constructors</span>
+<span class="token keyword">const</span> graph <span class="token operator">=</span> UndirectedGraph<span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p><em>Arguments</em></p><ul><li><strong>data</strong> <span class="code">Graph|SerializedGraph</span>: pre-existing data to give to the constructor. This data can either be an existing <code>Graph</code> instance, and in this case both nodes &amp; edges will be imported from the given graph, or a serialized graph whose format is described <a href="serialization.html#format">here</a>.
+</li>
+<li><strong>options</strong> <span class="code">[object]</span>: options passed to the created graph.
+</li></ul>
+<p>Note that <code>graphology</code> will throw an error if you try to instantiate a <a href="#typed-constructors">typed constructor</a> using inconsistent options.</p><hr><h2 id="edge-key-generator-function">Edge key generator function</h2><p>The provided function takes a single object describing the created edge &amp; having the following properties:</p><ul><li><strong>undirected</strong> <span class="code">boolean</span>: whether the edge is undirected.
+</li>
+<li><strong>source</strong> <span class="code">any</span>: the source of the edge.
+</li>
+<li><strong>target</strong> <span class="code">any</span>: the target of the edge.
+</li>
+<li><strong>attributes</strong> <span class="code">object</span>: optional attributes.
+</li></ul>
+<p><em>Example - Incremental key</em></p><pre class="language-"><code class="lang-js"><span class="token keyword">const</span> generator <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> id <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> id<span class="token operator">++</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> graph <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Graph</span><span class="token punctuation">(</span><span class="token punctuation">{</span>edgeKeyGenerator<span class="token operator">:</span> generator<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+graph<span class="token punctuation">.</span><span class="token function">mergeEdge</span><span class="token punctuation">(</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Martha&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+graph<span class="token punctuation">.</span><span class="token function">edges</span><span class="token punctuation">(</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Martha&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&gt;&gt;&gt;</span> <span class="token punctuation">[</span><span class="token string">&apos;0&apos;</span><span class="token punctuation">]</span></code></pre>
+<p><em>Example - Key based on edge data</em></p><pre class="language-"><code class="lang-js"><span class="token keyword">const</span> <span class="token function-variable function">generator</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>undirected<span class="token punctuation">,</span> source<span class="token punctuation">,</span> target<span class="token punctuation">,</span> attributes<span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>source<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">-&gt;</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>target<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> graph <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Graph</span><span class="token punctuation">(</span><span class="token punctuation">{</span>edgeKeyGenerator<span class="token operator">:</span> generator<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+graph<span class="token punctuation">.</span><span class="token function">mergeEdge</span><span class="token punctuation">(</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Martha&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+graph<span class="token punctuation">.</span><span class="token function">edges</span><span class="token punctuation">(</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Martha&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&gt;&gt;&gt;</span> <span class="token punctuation">[</span><span class="token string">&apos;John-&gt;Martha&apos;</span><span class="token punctuation">]</span></code></pre>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="design.html" class="navigation navigation-prev " aria-label="Previous page: Design choices">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="instantiation.html#options" class="navigation navigation-next " aria-label="Next page: Options">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Instantiation","level":"1.4","depth":1,"next":{"title":"Options","level":"1.4.1","depth":2,"anchor":"#options","path":"instantiation.md","ref":"instantiation.md#options","articles":[]},"previous":{"title":"Design choices","level":"1.3","depth":1,"path":"design.md","ref":"design.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","prism","-highlight","github","-search","-lunr","addcssjs"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"addcssjs":{"js":["js/search.js"],"css":[]},"github":{"url":"https://github.com/graphology"},"prism":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"graphology","gitbook":"3.2.0"},"file":{"path":"instantiation.md","mtime":"2020-10-17T17:35:05.427Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2021-03-08T11:52:33.266Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    
+    <script type="text/javascript" src="js/search.js"></script>
+    
+
+    </body>
+</html>
+

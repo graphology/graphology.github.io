@@ -1,0 +1,2136 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Mutation · graphology</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="mutation.html" />
+    
+    
+    <link rel="prev" href="read.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="standard-library.html">
+            
+                <a href="standard-library.html">
+            
+                    
+                    Standard library
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="design.html">
+            
+                <a href="design.html">
+            
+                    
+                    Design choices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="instantiation.html">
+            
+                <a href="instantiation.html">
+            
+                    
+                    Instantiation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="instantiation.html">
+            
+                <a href="instantiation.html#options">
+            
+                    
+                    Options
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="instantiation.html">
+            
+                <a href="instantiation.html#typed-constructors">
+            
+                    
+                    Typed constructors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="instantiation.html">
+            
+                <a href="instantiation.html#static-from-method">
+            
+                    
+                    Static #.from method
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="properties.html">
+            
+                <a href="properties.html">
+            
+                    
+                    Properties
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="properties.html">
+            
+                <a href="properties.html#order">
+            
+                    
+                    #.order
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="properties.html">
+            
+                <a href="properties.html#size">
+            
+                    
+                    #.size
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="properties.html">
+            
+                <a href="properties.html#type">
+            
+                    
+                    #.type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="properties.html">
+            
+                <a href="properties.html#multi">
+            
+                    
+                    #.multi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="properties.html">
+            
+                <a href="properties.html#allowselfloops">
+            
+                    
+                    #.allowSelfLoops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="properties.html">
+            
+                <a href="properties.html#selfloopcount">
+            
+                    
+                    #.selfLoopCount
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="properties.html">
+            
+                <a href="properties.html#implementation">
+            
+                    
+                    #.implementation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="read.html">
+            
+                <a href="read.html">
+            
+                    
+                    Read
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="read.html">
+            
+                <a href="read.html#hasnode">
+            
+                    
+                    #.hasNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="read.html">
+            
+                <a href="read.html#hasedge">
+            
+                    
+                    #.hasEdge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="read.html">
+            
+                <a href="read.html#edge">
+            
+                    
+                    #.edge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="read.html">
+            
+                <a href="read.html#degree">
+            
+                    
+                    #.degree
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="read.html">
+            
+                <a href="read.html#source">
+            
+                    
+                    #.source
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="read.html">
+            
+                <a href="read.html#target">
+            
+                    
+                    #.target
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="read.html">
+            
+                <a href="read.html#opposite">
+            
+                    
+                    #.opposite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="read.html">
+            
+                <a href="read.html#extremities">
+            
+                    
+                    #.extremities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="read.html">
+            
+                <a href="read.html#hasextremity">
+            
+                    
+                    #.hasExtremity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="read.html">
+            
+                <a href="read.html#hasgeneratedkey">
+            
+                    
+                    #.hasGeneratedKey
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="read.html">
+            
+                <a href="read.html#isdirected">
+            
+                    
+                    #.isDirected
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="read.html">
+            
+                <a href="read.html#isselfloop">
+            
+                    
+                    #.isSelfLoop
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7" data-path="mutation.html">
+            
+                <a href="mutation.html">
+            
+                    
+                    Mutation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="mutation.html">
+            
+                <a href="mutation.html#addnode">
+            
+                    
+                    #.addNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="mutation.html">
+            
+                <a href="mutation.html#mergenode">
+            
+                    
+                    #.mergeNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="mutation.html">
+            
+                <a href="mutation.html#updatenode">
+            
+                    
+                    #.updateNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="mutation.html">
+            
+                <a href="mutation.html#addedge">
+            
+                    
+                    #.addEdge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="mutation.html">
+            
+                <a href="mutation.html#addedgewithkey">
+            
+                    
+                    #.addEdgeWithKey
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="mutation.html">
+            
+                <a href="mutation.html#mergeedge">
+            
+                    
+                    #.mergeEdge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="mutation.html">
+            
+                <a href="mutation.html#mergeedgewithkey">
+            
+                    
+                    #.mergeEdgeWithKey
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="mutation.html">
+            
+                <a href="mutation.html#updateedge">
+            
+                    
+                    #.updateEdge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="mutation.html">
+            
+                <a href="mutation.html#updateedgewithkey">
+            
+                    
+                    #.updateEdgeWithKey
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="mutation.html">
+            
+                <a href="mutation.html#dropnode">
+            
+                    
+                    #.dropNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.11" data-path="mutation.html">
+            
+                <a href="mutation.html#dropedge">
+            
+                    
+                    #.dropEdge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.12" data-path="mutation.html">
+            
+                <a href="mutation.html#clear">
+            
+                    
+                    #.clear
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.13" data-path="mutation.html">
+            
+                <a href="mutation.html#clearedges">
+            
+                    
+                    #.clearEdges
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="attributes.html">
+            
+                <a href="attributes.html">
+            
+                    
+                    Attributes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="attributes.html">
+            
+                <a href="attributes.html#graph">
+            
+                    
+                    Graph
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1.1" data-path="attributes.html">
+            
+                <a href="attributes.html#getattribute">
+            
+                    
+                    #.getAttribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.2" data-path="attributes.html">
+            
+                <a href="attributes.html#getattribute">
+            
+                    
+                    #.getAttributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.3" data-path="attributes.html">
+            
+                <a href="attributes.html#hasattribute">
+            
+                    
+                    #.hasAttribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.4" data-path="attributes.html">
+            
+                <a href="attributes.html#setattribute">
+            
+                    
+                    #.setAttribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.5" data-path="attributes.html">
+            
+                <a href="attributes.html#updateattribute">
+            
+                    
+                    #.updateAttribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.6" data-path="attributes.html">
+            
+                <a href="attributes.html#removeattribute">
+            
+                    
+                    #.removeAttribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.7" data-path="attributes.html">
+            
+                <a href="attributes.html#replaceattributes">
+            
+                    
+                    #.replaceAttributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.8" data-path="attributes.html">
+            
+                <a href="attributes.html#mergenodeattributes">
+            
+                    
+                    #.mergeAttributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="attributes.html">
+            
+                <a href="attributes.html#nodes">
+            
+                    
+                    Nodes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.2.1" data-path="attributes.html">
+            
+                <a href="attributes.html#getnodeattribute">
+            
+                    
+                    #.getNodeAttribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.2" data-path="attributes.html">
+            
+                <a href="attributes.html#getnodeattribute">
+            
+                    
+                    #.getNodeAttributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.3" data-path="attributes.html">
+            
+                <a href="attributes.html#hasnodeattribute">
+            
+                    
+                    #.hasNodeAttribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.4" data-path="attributes.html">
+            
+                <a href="attributes.html#setnodeattribute">
+            
+                    
+                    #.setNodeAttribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.5" data-path="attributes.html">
+            
+                <a href="attributes.html#updatenodeattribute">
+            
+                    
+                    #.updateNodeAttribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.6" data-path="attributes.html">
+            
+                <a href="attributes.html#removenodeattribute">
+            
+                    
+                    #.removeNodeAttribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.7" data-path="attributes.html">
+            
+                <a href="attributes.html#replacenodeattributes">
+            
+                    
+                    #.replaceNodeAttributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.8" data-path="attributes.html">
+            
+                <a href="attributes.html#mergenodeattributes">
+            
+                    
+                    #.mergeNodeAttributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.9" data-path="attributes.html">
+            
+                <a href="attributes.html#updateeachnodeattributes">
+            
+                    
+                    #.updateEachNodeAttributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="attributes.html">
+            
+                <a href="attributes.html#edges">
+            
+                    
+                    Edges
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.3.1" data-path="attributes.html">
+            
+                <a href="attributes.html#getedgeattribute">
+            
+                    
+                    #.getEdgeAttribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.2" data-path="attributes.html">
+            
+                <a href="attributes.html#getedgeattributes">
+            
+                    
+                    #.getEdgeAttributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.3" data-path="attributes.html">
+            
+                <a href="attributes.html#hasedgeattribute">
+            
+                    
+                    #.hasEdgeAttribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.4" data-path="attributes.html">
+            
+                <a href="attributes.html#setedgeattribute">
+            
+                    
+                    #.setEdgeAttribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.5" data-path="attributes.html">
+            
+                <a href="attributes.html#updateedgeattribute">
+            
+                    
+                    #.updateEdgeAttribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.6" data-path="attributes.html">
+            
+                <a href="attributes.html#removeedgeattribute">
+            
+                    
+                    #.removeEdgeAttribute
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.7" data-path="attributes.html">
+            
+                <a href="attributes.html#replaceedgeattributes">
+            
+                    
+                    #.replaceEdgeAttributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.8" data-path="attributes.html">
+            
+                <a href="attributes.html#mergeedgeattributes">
+            
+                    
+                    #.mergeEdgeAttributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.9" data-path="attributes.html">
+            
+                <a href="attributes.html#updateeachedgeattributes">
+            
+                    
+                    #.updateEachEdgeAttributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="iteration.html">
+            
+                <a href="iteration.html">
+            
+                    
+                    Iteration
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="iteration.html">
+            
+                <a href="iteration.html#adjacency">
+            
+                    
+                    Adjacency
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1.1" data-path="iteration.html">
+            
+                <a href="iteration.html#foreach">
+            
+                    
+                    #.forEach
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.2" data-path="iteration.html">
+            
+                <a href="iteration.html#foreachuntil">
+            
+                    
+                    #.forEachUntil
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.3" data-path="iteration.html">
+            
+                <a href="iteration.html#adjacency-iterator">
+            
+                    
+                    #.adjacency
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="iteration.html">
+            
+                <a href="iteration.html#nodes">
+            
+                    
+                    Nodes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.2.1" data-path="iteration.html">
+            
+                <a href="iteration.html#nodes-array">
+            
+                    
+                    #.nodes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.2" data-path="iteration.html">
+            
+                <a href="iteration.html#foreachnode">
+            
+                    
+                    #.forEachNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.3" data-path="iteration.html">
+            
+                <a href="iteration.html#foreachnodeuntil">
+            
+                    
+                    #.forEachNodeUntil
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.4" data-path="iteration.html">
+            
+                <a href="iteration.html#nodeentries">
+            
+                    
+                    #.nodeEntries
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="iteration.html">
+            
+                <a href="iteration.html#edges">
+            
+                    
+                    Edges
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.3.1" data-path="iteration.html">
+            
+                <a href="iteration.html#edges-array">
+            
+                    
+                    #.edges
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.2" data-path="iteration.html">
+            
+                <a href="iteration.html#foreachedge">
+            
+                    
+                    #.forEachEdge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.3" data-path="iteration.html">
+            
+                <a href="iteration.html#foreachedgeuntil">
+            
+                    
+                    #.forEachEdgeUntil
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.4" data-path="iteration.html">
+            
+                <a href="iteration.html#edgeentries">
+            
+                    
+                    #.edgeEntries
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="iteration.html">
+            
+                <a href="iteration.html#neighbors">
+            
+                    
+                    Neighbors
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.4.1" data-path="iteration.html">
+            
+                <a href="iteration.html#neighbors-array">
+            
+                    
+                    #.neighbors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.2" data-path="iteration.html">
+            
+                <a href="iteration.html#foreachneighbor">
+            
+                    
+                    #.forEachNeighbor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.3" data-path="iteration.html">
+            
+                <a href="iteration.html#foreachneighboruntil">
+            
+                    
+                    #.forEachNeighborUntil
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.4" data-path="iteration.html">
+            
+                <a href="iteration.html#neighborentries">
+            
+                    
+                    #.neighborEntries
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="events.html">
+            
+                <a href="events.html">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="events.html">
+            
+                <a href="events.html#nodeadded">
+            
+                    
+                    nodeAdded
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="events.html">
+            
+                <a href="events.html#edgeadded">
+            
+                    
+                    edgeAdded
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="events.html">
+            
+                <a href="events.html#nodedropped">
+            
+                    
+                    nodeDropped
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="events.html">
+            
+                <a href="events.html#edgedropped">
+            
+                    
+                    edgeDropped
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="events.html">
+            
+                <a href="events.html#cleared">
+            
+                    
+                    cleared
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="events.html">
+            
+                <a href="events.html#edgescleared">
+            
+                    
+                    edgesCleared
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="events.html">
+            
+                <a href="events.html#attributesupdated">
+            
+                    
+                    attributesUpdated
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="events.html">
+            
+                <a href="events.html#nodeattributesupdated">
+            
+                    
+                    nodeAttributesUpdated
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="events.html">
+            
+                <a href="events.html#edgeattributesupdated">
+            
+                    
+                    edgeAttributesUpdated
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="events.html">
+            
+                <a href="events.html#eachnodeattributesupdated">
+            
+                    
+                    eachNodeAttributesUpdated
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="events.html">
+            
+                <a href="events.html#eachedgeattributesupdated">
+            
+                    
+                    eachEdgeAttributesUpdated
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="serialization.html">
+            
+                <a href="serialization.html">
+            
+                    
+                    Serialization
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="serialization.html">
+            
+                <a href="serialization.html#format">
+            
+                    
+                    Format
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="serialization.html">
+            
+                <a href="serialization.html#import">
+            
+                    
+                    #.import
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="serialization.html">
+            
+                <a href="serialization.html#importnode">
+            
+                    
+                    #.importNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="serialization.html">
+            
+                <a href="serialization.html#importedge">
+            
+                    
+                    #.importEdge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="serialization.html">
+            
+                <a href="serialization.html#export">
+            
+                    
+                    #.export
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="serialization.html">
+            
+                <a href="serialization.html#exportnode">
+            
+                    
+                    #.exportNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="serialization.html">
+            
+                <a href="serialization.html#exportedge">
+            
+                    
+                    #.exportEdge
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="utils.html">
+            
+                <a href="utils.html">
+            
+                    
+                    Utils
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="utils.html">
+            
+                <a href="utils.html#copy">
+            
+                    
+                    #.copy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="utils.html">
+            
+                <a href="utils.html#nullcopy">
+            
+                    
+                    #.nullCopy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="utils.html">
+            
+                <a href="utils.html#emptycopy">
+            
+                    
+                    #.emptyCopy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="utils.html">
+            
+                <a href="utils.html#upgradetomixed">
+            
+                    
+                    #.upgradeToMixed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="utils.html">
+            
+                <a href="utils.html#upgradetomulti">
+            
+                    
+                    #.upgradeToMulti
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="knownmethods.html">
+            
+                <a href="knownmethods.html">
+            
+                    
+                    Known methods
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="knownmethods.html">
+            
+                <a href="knownmethods.html#tojson">
+            
+                    
+                    #.toJSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="knownmethods.html">
+            
+                <a href="knownmethods.html#inspect">
+            
+                    
+                    #.inspect
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="unittests.html">
+            
+                <a href="unittests.html">
+            
+                    
+                    Running the unit tests
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Mutation</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="mutation">Mutation</h1><h2 id="addnode">#.addNode</h2><p>Adds a single node to the graph with optional attributes and returns the node.</p><p>Will throw if the node already exists in the graph.</p><p><em>Example</em></p><pre class="language-"><code class="lang-js"><span class="token comment">// Adding a simple node:</span>
+<span class="token keyword">const</span> node <span class="token operator">=</span> graph<span class="token punctuation">.</span><span class="token function">addNode</span><span class="token punctuation">(</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Adding a node with attributes:</span>
+<span class="token keyword">const</span> node <span class="token operator">=</span> graph<span class="token punctuation">.</span><span class="token function">addNode</span><span class="token punctuation">(</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  age<span class="token operator">:</span> <span class="token number">24</span><span class="token punctuation">,</span>
+  eyes<span class="token operator">:</span> <span class="token string">&apos;blue&apos;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p><em>Arguments</em></p><ul><li><strong>node</strong> <span class="code">any</span>: the key referencing the node.
+</li>
+<li><strong>attributes</strong> <span class="code">[object]</span>: optional attributes.
+</li></ul>
+<h2 id="mergenode">#.mergeNode</h2><p>Adds a node only if the node does not exist in the graph yet. Else it will merge the provided attributes with the already existing ones.</p><p><em>Example</em></p><pre class="language-"><code class="lang-js"><span class="token comment">// Since &apos;John&apos; does not exist in the graph, a node will be added</span>
+graph<span class="token punctuation">.</span><span class="token function">mergeNode</span><span class="token punctuation">(</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Since &apos;John&apos; already exists in the graph, this will do nothing</span>
+graph<span class="token punctuation">.</span><span class="token function">mergeNode</span><span class="token punctuation">(</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Note that if the node already exists, attributes are merged</span>
+graph<span class="token punctuation">.</span><span class="token function">mergeNode</span><span class="token punctuation">(</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>eyes<span class="token operator">:</span> <span class="token string">&apos;blue&apos;</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+graph<span class="token punctuation">.</span><span class="token function">getNodeAttributes</span><span class="token punctuation">(</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&gt;&gt;&gt;</span> <span class="token punctuation">{</span>
+  eyes<span class="token operator">:</span> <span class="token string">&apos;blue&apos;</span>
+<span class="token punctuation">}</span></code></pre>
+<p><em>Arguments</em></p><ul><li><strong>node</strong> <span class="code">any</span>: the node&apos;s key.
+</li>
+<li><strong>attributes</strong> <span class="code">object</span>: the node&apos;s initial attributes or attributes to merge with the already existing ones.
+</li></ul>
+<h2 id="updatenode">#.updateNode</h2><p>Adds a node only if the node does not exist in the graph yet. Else it will update the already existing node&apos;s attributes using the provided function.</p><p>If the node does not yet exist, the updated function must still return the initial attributes and will be given an empty object to do so.</p><p><em>Example</em></p><pre class="language-"><code class="lang-js"><span class="token comment">// Since &apos;John&apos; does not exist in the graph, a node will be added</span>
+graph<span class="token punctuation">.</span><span class="token function">updateNode</span><span class="token punctuation">(</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">,</span> <span class="token parameter">attr</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span>attr<span class="token punctuation">,</span>
+    count<span class="token operator">:</span> <span class="token punctuation">(</span>attr<span class="token punctuation">.</span>count <span class="token operator">||</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Since &apos;John&apos; already exist in the graph, this time its count will get incremented</span>
+graph<span class="token punctuation">.</span><span class="token function">updateNode</span><span class="token punctuation">(</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">,</span> <span class="token parameter">attr</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span>attr<span class="token punctuation">,</span>
+    count<span class="token operator">:</span> <span class="token punctuation">(</span>attr<span class="token punctuation">.</span>count <span class="token operator">||</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+graph<span class="token punctuation">.</span><span class="token function">getNodeAttribute</span><span class="token punctuation">(</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;count&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&gt;&gt;&gt;</span> <span class="token number">2</span></code></pre>
+<p><em>Arguments</em></p><ul><li><strong>node</strong> <span class="code">any</span>: the node&apos;s key.
+</li>
+<li><strong>updater</strong> <span class="code">[function]</span>: a function tasked to update target node&apos;s attributes.
+</li></ul>
+<h2 id="addedge">#.addEdge</h2><p>Adds a single directed edge if the graph is <code>directed</code> or <code>mixed</code>, or an undirected edge if the graph is <code>undirected</code> and returns the edge.</p><p><em>Example</em></p><pre class="language-"><code class="lang-js">graph<span class="token punctuation">.</span><span class="token function">addNode</span><span class="token punctuation">(</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+graph<span class="token punctuation">.</span><span class="token function">addNode</span><span class="token punctuation">(</span><span class="token string">&apos;Jack&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Adding a simple edge between John &amp; Jack:</span>
+<span class="token keyword">const</span> edge <span class="token operator">=</span> graph<span class="token punctuation">.</span><span class="token function">addEdge</span><span class="token punctuation">(</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Jack&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Adding an edge with attributes between John &amp; Jack;</span>
+<span class="token keyword">const</span> edge <span class="token operator">=</span> graph<span class="token punctuation">.</span><span class="token function">addEdge</span><span class="token punctuation">(</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Jack&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  type<span class="token operator">:</span> <span class="token string">&apos;KNOWS&apos;</span><span class="token punctuation">,</span>
+  weight<span class="token operator">:</span> <span class="token number">0</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p><em>Arguments</em></p><ul><li><strong>source</strong> <span class="code">any</span>: the source node.
+</li>
+<li><strong>target</strong> <span class="code">any</span>: the target node.
+</li>
+<li><strong>attributes</strong> <span class="code">[object]</span>: optional attributes.
+</li></ul>
+<p><em>Important</em></p><p>This method is a convenience built on top of the <a href="#addedgewithkey"><code>#.addEdgeWithKey</code></a> method so that the user may add an edge in the graph without having to create a specific key for it.</p><p>Note that internally, because this key is still needed, the graph will generate one for you using a unique identifier. You remain free to customize the way those keys are generated through the <a href="instantiation.html#arguments"><code>edgeKeyGenerator</code></a> option.</p><p><em>Variants</em></p><ul><li><code>#.addDirectedEdge</code>
+</li>
+<li><code>#.addUndirectedEdge</code>
+</li></ul>
+<h2 id="addedgewithkey">#.addEdgeWithKey</h2><p>Adds a single directed edge if the graph is <code>directed</code> or <code>mixed</code>, or an undirected edge if the graph is <code>undirected</code>, using the provided key, and returns the edge.</p><p>This is quite useful when dealing with a <code>MultiGraph</code> if you need to retrieve precise edges since polling the graph using both the source &amp; the target node might return several edges rather than only one.</p><p><em>Example</em></p><pre class="language-"><code class="lang-js">graph<span class="token punctuation">.</span><span class="token function">addNode</span><span class="token punctuation">(</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+graph<span class="token punctuation">.</span><span class="token function">addNode</span><span class="token punctuation">(</span><span class="token string">&apos;Jack&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Adding a simple edge between John &amp; Jack:</span>
+<span class="token keyword">const</span> edge <span class="token operator">=</span> graph<span class="token punctuation">.</span><span class="token function">addEdgeWithKey</span><span class="token punctuation">(</span><span class="token string">&apos;John-&gt;Jack&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;John&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Jack&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Adding an edge with attributes between John &amp; Jack;</span>
+<span class="token keyword">const</span> edge <span class="token operator">=</span> graph<span class="token punctuation">.</span><span class="token function">addEdgeWithKey</span><span class="token punctuation">(</span><span class="token string">&apos;John-&gt;Jack&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;John&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Jack&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  type<span class="token operator">:</span> <span class="token string">&apos;KNOWS&apos;</span><span class="token punctuation">,</span>
+  weight<span class="token operator">:</span> <span class="token number">0</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p><em>Arguments</em></p><ul><li><strong>edge</strong> <span class="code">any</span>: the key referencing the edge.
+</li>
+<li><strong>source</strong> <span class="code">any</span>: the source node.
+</li>
+<li><strong>target</strong> <span class="code">any</span>: the target node.
+</li>
+<li><strong>attributes</strong> <span class="code">[object]</span>: optional attributes.
+</li></ul>
+<p><em>Variants</em></p><ul><li><code>#.addDirectedEdgeWithKey</code>
+</li>
+<li><code>#.addUndirectedEdgeWithKey</code>
+</li></ul>
+<h2 id="mergeedge">#.mergeEdge</h2><p>Adds an edge with the given key only if the edge does not exist in the graph yet. Else it will merge the provided attributes with the already existing ones.</p><p>Furthermore, this method will also add the source and/or target nodes to the graph if not found.</p><p>Note that an edge is deemed to already exist in a simple graph if the graph can find one edge of same type going from the same source to the same target.</p><p>In a multi graph, this method will therefore always add a new edge.</p><pre class="language-"><code class="lang-js"><span class="token keyword">const</span> graph <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">UndirectedGraph</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Since the edge does not exist, it will be added</span>
+graph<span class="token punctuation">.</span><span class="token function">mergeEdge</span><span class="token punctuation">(</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Martha&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Now, since the edge already exists, this will do nothing</span>
+graph<span class="token punctuation">.</span><span class="token function">mergeEdge</span><span class="token punctuation">(</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Martha&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Note that if the edge already exists, attributes are merged</span>
+graph<span class="token punctuation">.</span><span class="token function">mergeEdge</span><span class="token punctuation">(</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Martha&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>type<span class="token operator">:</span> <span class="token string">&apos;KNOWS&apos;</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+graph<span class="token punctuation">.</span><span class="token function">getEdgeAttributes</span><span class="token punctuation">(</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Martha&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&gt;&gt;&gt;</span> <span class="token punctuation">{</span>
+  type<span class="token operator">:</span> <span class="token string">&apos;KNOWS&apos;</span>
+<span class="token punctuation">}</span></code></pre>
+<p><em>Arguments</em></p><ul><li><strong>source</strong> <span class="code">any</span>: the source node.
+</li>
+<li><strong>target</strong> <span class="code">any</span>: the target node.
+</li>
+<li><strong>attributes</strong> <span class="code">[object]</span>: optional attributes to merge.
+</li></ul>
+<p><em>Variants</em></p><ul><li><code>#.mergeDirectedEdge</code>
+</li>
+<li><code>#.mergeUndirectedEdge</code>
+</li></ul>
+<h2 id="mergeedgewithkey">#.mergeEdgeWithKey</h2><p>Adds an edge with the given key only if the edge does not exist in the graph yet. Else it will merge the provided attributes with the already existing ones.</p><p>Furthermore, this method will also add the source and/or target nodes to the graph if not found.</p><p>Note that in this case, an edge is deemed to already exist in the graph if an edge with the same key, same type and same source &amp; target is found in the graph.</p><p>If one tries to add an edge with the given key and if the graph has an edge with the same key but a different source &amp; target, the method will throw to notify of the inconsistency.</p><pre class="language-"><code class="lang-js"><span class="token keyword">const</span> graph <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">UndirectedGraph</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+graph<span class="token punctuation">.</span><span class="token function">addNodesFrom</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Martha&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Thomas&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Since the edge does not exist, it will be added</span>
+graph<span class="token punctuation">.</span><span class="token function">mergeEdgeWithKey</span><span class="token punctuation">(</span><span class="token string">&apos;J-&gt;M&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;John&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Martha&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Now, since the edge already exists, this will do nothing</span>
+graph<span class="token punctuation">.</span><span class="token function">mergeEdgeWithKey</span><span class="token punctuation">(</span><span class="token string">&apos;J-&gt;M&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;John&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Martha&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Note that if the edge already exists, attributes are merged</span>
+graph<span class="token punctuation">.</span><span class="token function">mergeEdgeWithKey</span><span class="token punctuation">(</span><span class="token string">&apos;J-&gt;M&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;John&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Martha&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>type<span class="token operator">:</span> <span class="token string">&apos;KNOWS&apos;</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+graph<span class="token punctuation">.</span><span class="token function">getEdgeAttributes</span><span class="token punctuation">(</span><span class="token string">&apos;J-&gt;M&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&gt;&gt;&gt;</span> <span class="token punctuation">{</span>
+  type<span class="token operator">:</span> <span class="token string">&apos;KNOWS&apos;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// However, the following will throw an error</span>
+graph<span class="token punctuation">.</span><span class="token function">mergeEdgeWithKey</span><span class="token punctuation">(</span><span class="token string">&apos;J-&gt;M&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Thomas&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Martha&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p><em>Arguments</em></p><ul><li><strong>edge</strong> <span class="code">any</span>: the edge&apos;s key.
+</li>
+<li><strong>source</strong> <span class="code">any</span>: the source node.
+</li>
+<li><strong>target</strong> <span class="code">any</span>: the target node.
+</li>
+<li><strong>attributes</strong> <span class="code">[object]</span>: optional attributes to merge.
+</li></ul>
+<p><em>Variants</em></p><ul><li><code>#.mergeDirectedEdgeWithKey</code>
+</li>
+<li><code>#.mergeUndirectedEdgeWithKey</code>
+</li></ul>
+<h2 id="updateedge">#.updateEdge</h2><p>Adds an edge with the given key only if the edge does not exist in the graph yet. Else it will update the already existing edge&apos;s attributes using the provided function.</p><p>If the edge does not yet exist, the updated function must still return the initial attributes and will be given an empty object to do so.</p><p>Furthermore, this method will also add the source and/or target nodes to the graph if not found.</p><p>Note that an edge is deemed to already exist in a simple graph if the graph can find one edge of same type going from the same source to the same target.</p><p>In a multi graph, this method will therefore always add a new edge.</p><pre class="language-"><code class="lang-js"><span class="token keyword">const</span> graph <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">UndirectedGraph</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Since the edge does not exist, it will be added</span>
+graph<span class="token punctuation">.</span><span class="token function">updateEdgeWithKey</span><span class="token punctuation">(</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Martha&apos;</span><span class="token punctuation">,</span> <span class="token parameter">attr</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span>attr<span class="token punctuation">,</span>
+    weight<span class="token operator">:</span> <span class="token punctuation">(</span>attr<span class="token punctuation">.</span>weight <span class="token operator">||</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Since the edge already exist, its weight will get incremented this time</span>
+graph<span class="token punctuation">.</span><span class="token function">updateEdge</span><span class="token punctuation">(</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Martha&apos;</span><span class="token punctuation">,</span> <span class="token parameter">attr</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span>attr<span class="token punctuation">,</span>
+    weight<span class="token operator">:</span> <span class="token punctuation">(</span>attr<span class="token punctuation">.</span>weight <span class="token operator">||</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+graph<span class="token punctuation">.</span><span class="token function">getEdgeAttribute</span><span class="token punctuation">(</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Martha&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;weight&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&gt;&gt;&gt;</span> <span class="token number">2</span></code></pre>
+<p><em>Arguments</em></p><ul><li><strong>edge</strong>
+</li>
+<li><strong>source</strong> <span class="code">any</span>: the source node.
+</li>
+<li><strong>target</strong> <span class="code">any</span>: the target node.
+</li>
+<li><strong>updater</strong> <span class="code">[function]</span>: optional function tasked to update the edge&apos;s attributes.
+</li></ul>
+<p><em>Variants</em></p><ul><li><code>#.updateDirectedEdge</code>
+</li>
+<li><code>#.updateUndirectedEdge</code>
+</li></ul>
+<h2 id="updateedgewithkey">#.updateEdgeWithKey</h2><p>Adds an edge with the given key only if the edge does not exist in the graph yet. Else it will update the already existing edge&apos;s attributes using the provided function.</p><p>If the edge does not yet exist, the updated function must still return the initial attributes and will be given an empty object to do so.</p><p>Furthermore, this method will also add the source and/or target nodes to the graph if not found.</p><p>Note that in this case, an edge is deemed to already exist in the graph if an edge with the same key, same type and same source &amp; target is found in the graph.</p><p>If one tries to add an edge with the given key and if the graph has an edge with the same key but a different source &amp; target, the method will throw to notify of the inconsistency.</p><pre class="language-"><code class="lang-js"><span class="token keyword">const</span> graph <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">UndirectedGraph</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Since the edge does not exist, it will be added</span>
+graph<span class="token punctuation">.</span><span class="token function">updateEdgeWithKey</span><span class="token punctuation">(</span><span class="token string">&apos;J-&gt;M&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;John&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Martha&apos;</span><span class="token punctuation">,</span> <span class="token parameter">attr</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span>attr<span class="token punctuation">,</span>
+    weight<span class="token operator">:</span> <span class="token punctuation">(</span>attr<span class="token punctuation">.</span>weight <span class="token operator">||</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Since the edge already exist, its weight will get incremented this time</span>
+graph<span class="token punctuation">.</span><span class="token function">updateEdgeWithKey</span><span class="token punctuation">(</span><span class="token string">&apos;J-&gt;M&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;John&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Martha&apos;</span><span class="token punctuation">,</span> <span class="token parameter">attr</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span>attr<span class="token punctuation">,</span>
+    weight<span class="token operator">:</span> <span class="token punctuation">(</span>attr<span class="token punctuation">.</span>weight <span class="token operator">||</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+graph<span class="token punctuation">.</span><span class="token function">getEdgeAttribute</span><span class="token punctuation">(</span><span class="token string">&apos;J-&gt;M&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;weight&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&gt;&gt;&gt;</span> <span class="token number">2</span></code></pre>
+<p><em>Arguments</em></p><ul><li><strong>edge</strong> <span class="code">any</span>: the edge&apos;s key.
+</li>
+<li><strong>source</strong> <span class="code">any</span>: the source node.
+</li>
+<li><strong>target</strong> <span class="code">any</span>: the target node.
+</li>
+<li><strong>updater</strong> <span class="code">[function]</span>: optional function tasked to update the edge&apos;s attributes.
+</li></ul>
+<p><em>Variants</em></p><ul><li><code>#.updateDirectedEdgeWithKey</code>
+</li>
+<li><code>#.updateUndirectedEdgeWithKey</code>
+</li></ul>
+<h2 id="dropnode">#.dropNode</h2><p>Drops a single node &amp; all its attached edges from the graph.</p><p><em>Example</em></p><pre class="language-"><code class="lang-js">graph<span class="token punctuation">.</span><span class="token function">addNode</span><span class="token punctuation">(</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+graph<span class="token punctuation">.</span><span class="token function">dropNode</span><span class="token punctuation">(</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+graph<span class="token punctuation">.</span><span class="token function">dropNode</span><span class="token punctuation">(</span><span class="token string">&apos;Martha&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&gt;&gt;&gt;</span> Error <span class="token string">&quot;Martha not in the graph&quot;</span></code></pre>
+<p><em>Arguments</em></p><ul><li><strong>node</strong> <span class="code">any</span>: the node to drop.
+</li></ul>
+<h2 id="dropedge">#.dropEdge</h2><p>Drops a single edge from the graph.</p><p><em>Example</em></p><pre class="language-"><code class="lang-js">graph<span class="token punctuation">.</span><span class="token function">addNode</span><span class="token punctuation">(</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+graph<span class="token punctuation">.</span><span class="token function">addNode</span><span class="token punctuation">(</span><span class="token string">&apos;Martha&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> edge <span class="token operator">=</span> graph<span class="token punctuation">.</span><span class="token function">addEdge</span><span class="token punctuation">(</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Martha&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Dropping the edge using its key:</span>
+graph<span class="token punctuation">.</span><span class="token function">dropEdge</span><span class="token punctuation">(</span>edge<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Dropping the first matching edge between John &amp; Martha</span>
+graph<span class="token punctuation">.</span><span class="token function">dropEdge</span><span class="token punctuation">(</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Martha&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p><em>Arguments</em></p><ol><li><p>Using the key:</p><ul><li><strong>edge</strong> <span class="code">any</span>: the edge to drop.
+</li></ul>
+</li>
+<li><p>Using the source &amp; target:</p><ul><li><strong>source</strong> <span class="code">any</span>: source node of the edge to drop.
+</li>
+<li><strong>target</strong> <span class="code">any</span>: target node of the edge to drop.
+</li></ul>
+</li></ol>
+<h2 id="clear">#.clear</h2><p>Drop every node &amp; every edge from the graph, leaving it empty.</p><p><em>Example</em></p><pre class="language-"><code class="lang-js">graph<span class="token punctuation">.</span><span class="token function">addNode</span><span class="token punctuation">(</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+graph<span class="token punctuation">.</span><span class="token function">addNode</span><span class="token punctuation">(</span><span class="token string">&apos;Jack&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+graph<span class="token punctuation">.</span><span class="token function">addEdge</span><span class="token punctuation">(</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Jack&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>graph<span class="token punctuation">.</span>order<span class="token punctuation">,</span> graph<span class="token punctuation">.</span>size<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&gt;&gt;&gt;</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span>
+
+graph<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>graph<span class="token punctuation">.</span>order<span class="token punctuation">,</span> graph<span class="token punctuation">.</span>size<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&gt;&gt;&gt;</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span>
+
+graph<span class="token punctuation">.</span><span class="token function">hasNode</span><span class="token punctuation">(</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&gt;&gt;&gt;</span> <span class="token boolean">false</span></code></pre>
+<h2 id="clearedges">#.clearEdges</h2><p>Drop every every edge from the graph, keeping only nodes.</p><p><em>Example</em></p><pre class="language-"><code class="lang-js">graph<span class="token punctuation">.</span><span class="token function">addNode</span><span class="token punctuation">(</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+graph<span class="token punctuation">.</span><span class="token function">addNode</span><span class="token punctuation">(</span><span class="token string">&apos;Jack&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+graph<span class="token punctuation">.</span><span class="token function">addEdge</span><span class="token punctuation">(</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Jack&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>graph<span class="token punctuation">.</span>order<span class="token punctuation">,</span> graph<span class="token punctuation">.</span>size<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&gt;&gt;&gt;</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span>
+
+graph<span class="token punctuation">.</span><span class="token function">clearEdges</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>graph<span class="token punctuation">.</span>order<span class="token punctuation">,</span> graph<span class="token punctuation">.</span>size<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&gt;&gt;&gt;</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">0</span>
+
+graph<span class="token punctuation">.</span><span class="token function">hasEdge</span><span class="token punctuation">(</span><span class="token string">&apos;John&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Jack&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&gt;&gt;&gt;</span> <span class="token boolean">false</span></code></pre>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="read.html#isselfloop" class="navigation navigation-prev " aria-label="Previous page: #.isSelfLoop">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="mutation.html#addnode" class="navigation navigation-next " aria-label="Next page: #.addNode">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Mutation","level":"1.7","depth":1,"next":{"title":"#.addNode","level":"1.7.1","depth":2,"anchor":"#addnode","path":"mutation.md","ref":"mutation.md#addnode","articles":[]},"previous":{"title":"#.isSelfLoop","level":"1.6.12","depth":2,"anchor":"#isselfloop","path":"read.md","ref":"read.md#isselfloop","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","prism","-highlight","github","-search","-lunr","addcssjs"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"addcssjs":{"js":["js/search.js"],"css":[]},"github":{"url":"https://github.com/graphology"},"prism":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"graphology","gitbook":"3.2.0"},"file":{"path":"mutation.md","mtime":"2021-03-08T11:50:47.132Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2021-03-08T11:52:33.266Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    
+    <script type="text/javascript" src="js/search.js"></script>
+    
+
+    </body>
+</html>
+
