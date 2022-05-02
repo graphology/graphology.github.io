@@ -68,6 +68,19 @@ MultiDirectedGraph
 MultiUndirectedGraph
 ```
 
+## Generic constructors for typed attributes
+
+When used with TypeScript, all `Graph` constructors support 3 optional type parameters. These correspond to the types to be used for the `Graph`'s node attributes, edge attributes, and graph attributes in that order.
+
+_Example_
+
+```ts
+import Graph from "graphology"
+
+// Results in object of type `Graph<Map<string, number>, number[], Attributes>`
+const typedAttributesGraph = new MultiDirectedGraph<Map<string, number>, number[]>();
+```
+
 ## Static #.from method
 
 Alternatively, one can create a graph from a serialized graph or another `Graph` instance using the static `#.from` method:
